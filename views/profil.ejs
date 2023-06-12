@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css"
+  ntegrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css" />
+    <title>S0rg?</title>
+  </head>
+  <body class="bg-gray-900">
+    <header class="text-gray-400 bg-gray-900 body-font">
+      <div class="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+<img class="w-10 h-10 rounded-full" src="https://cdn.discordapp.com/icons/1038094169819856976/a_c87d761a2bdbac3fe7bf2b6cbd43484f.gif">
+          <span class="ml-3 text-xl">Turbo</span>
+        </a>
+        <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
+          <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots"> 
+            <i class="fa-xl fa-solid fa-magnifying-glass"></i>
+          </button>
+    
+          <div id="dropdownDots" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
+            <div class="py-3 px-4 text-sm text-gray-900 dark:text-white">
+              <div>Sorgu</div>
+            </div> 
+            <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownMenuIconButton">
+                <li>
+                  <a href="<%= link %>sorgu/gt" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">GSM -> TC</a>
+                </li>
+                <li>
+                  <a href="<%= link %>sorgu/tg" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">TC -> GSM</a>
+                </li>
+                <li>
+                  <a href="<%= link %>sorgu/sorgu" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">AD SOYAD -> TC(TÜM TR)</a>
+                </li>
+                <li>
+                  <a href="<%= link %>sorgu/mrns" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">AD SOYAD -> TC(+18)</a>
+                </li>
+                <li>
+                  <a href="<%= link %>sorgu/tb" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">TC -> BİLGİ</a>
+                </li> 
+               <li>
+                  <a href="<%= link %>sorgu/ta" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">TC -> Aile</a>
+                </li>
+                              </ul>
+          </div>
+        </nav>
+
+      <img  id="dropdownInformationButton" data-dropdown-toggle="dropdownInformation" class="rounded-full w-12 h-12" src="<%=client.users.cache.get(user.id).displayAvatarURL({ dynamic: true, format: "jpeg" })%>">
+        <div id="dropdownInformation" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
+          <div class="py-3 px-4 text-sm text-gray-900 dark:text-white">
+            <div><%= user.username %></div>
+          </div>
+          <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownInformationButton">
+            <li>
+              <a href="/profil" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Profil</a>
+            </li>
+            <li>
+              <a href="/cikis" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Çıkış</a>
+            </li>
+          </ul>
+      </div>
+      </div>
+    </header>
+<center>
+<div class="w-full max-w-sm bg-white border border-white rounded-lg shadow-md dark:bg-slate-900 dark:border-gray-700">
+    <div class="flex justify-end px-4 pt-4">
+    </div>
+    <div class="flex flex-col items-center pb-10">
+        <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="<%=client.users.cache.get(user.id).displayAvatarURL({ dynamic: true, format: "jpeg" })%>" alt="Bonnie image"/>
+        <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white"><%= user.username %></h5>
+        <span class="text-sm text-gray-500 dark:text-gray-400">Premium Üye</span>
+        <div class="flex mt-4 space-x-3 md:mt-6">
+            <span class="text-sm text-gray-500 dark:text-gray-400"><% let e = haha.sure - Date.now()
+                const days = Math.floor(e / (24*60*60*1000));
+                const daysms = e % (24*60*60*1000);
+                const hours = Math.floor(daysms / (60*60*1000));
+                const hoursms = e % (60*60*1000);
+                const minutes = Math.floor(hoursms / (60*1000));
+                const minutesms = e % (60*1000);
+                const sec = Math.floor(minutesms / 1000);
+                let h =  days + " Gün " + hours + " Saat " + minutes + " Dakika " + sec + " Saniye";
+             %> <%= h %></span>
+        </div>
+    </div>
+</div>
+</center>
+    </body>
+    </html>
